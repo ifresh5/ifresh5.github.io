@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #696969;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@font-face {
+    font-family: GunnyRewritten;
+    src: url(font/gnyrwn971.ttf);
+}
+
+.logo {
+  background-color: black;
+  width: 100%; /* Ширина */
+  display: flex; /* Указує що лого це флекс контейнер для флекс бокса */
+  justify-content: center;
+}
+
+.graficlogo {
+  padding: 5px; /* Відступ */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: auto;
+  width: 800px;
+  height: 150px;
+}
+
+.navs {
+  background-color: silver;
+  padding: 20px;
+  font-size: 14px;
+  border: 3px solid black;
+  border-radius: 0px 0px 30px 30px;
+  border-top: none;
+  text-align: center;
+}
+
+.navs a {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 30px; /* Відступ один від одного зліва і з права*/
+  font-family: GunnyRewritten;
+  font-weight: bold;
+}
+
+.navs .icon {
+  background-color: Gray;
+  border: 3px solid black;
+  border-radius: 15px 15px 30px 30px;
+  font-weight: bold;
+}
+
+/* Зробимо ховер ефект (при наведенні миш.) */
+.hovers:hover {
+  padding: 30px 35px 30px 35px;
+  color: LightSlateGray;
+}
+
+#menu:hover {
+  background-color: LightSlateGray;
+  color: #F0E68C;
+  padding: 35px 35px;
+  border: 3px solid black;
+  border-top: 2px solid black;
+}
+
+.navs.responsive {
+  position: relative;
+}
+
+.navs.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0px 0px 30px 30px;
+  border-top: none;
+}
+
+.navs.responsive a:hover {
+  border-bottom: 4px solid LightSlateGray;
+}
+
+.navs.responsive a {
+  float: none;
+  display: block;
+}
+
+.bord {
+  background-color: #D3D3D3;
+  max-width: 100%;
+  height: 100px;
+}
+
+#one {
+  text-align: center;
+  padding-top: 25px;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.adwantages_conteiners {
+  display: flex;
+  justify-content: center;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.adwantages {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;  /* установлює відступи між контейнерами */
+  text-align: center;
+  flex-wrap: wrap; /* задає св виводу флекс ел в одну строку або в декілька */
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.adv_url {
+  color: black;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.adv_url:hover {
+  background-color: silver;
+  border: 2px solid black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 15px;
+
+  /* margin-top: 3px;
+  margin-bottom: 3px;
+
+  обовязково ставити і зверху і з низу щоб не стягувало стор. */
+}
+
+.adv_items {
+  padding-top: 20px;
+}
+
+.adv_items p {
+  font-size: 20px;
+}
+
+
+#clickFone {
+  background-color: #D3D3D3;
+  height: 80px;
+  margin-top: 30px;
+  border-top: 5px solid #696969;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+}
+
+#clickFone a {
+  background-color: silver;
+  border: 3px solid black;
+  border-radius: 30px;
+  border-top: 3px solid black;
+  padding: 30px 50px;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+#clickFone a:hover {
+  background-color: #F0E68C;
+  padding: 35px 55px;
+  border: 3px solid black;
+  border-top: 3px solid black;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 30px;
+  color: gray;
+}
+
+/* #clickF {
+  margin: auto;
+  padding-top: 30px;
+  width: 200px;
+  height: 100px;
+}
+
+ #clickF .navs {
+  background-color: silver;
+  border: 3px solid black;
+  border-radius: 30px;
+  border-top: 3px solid black;
+}
+
+#clickF .navs:hover {
+  background-color: #F0E68C;
+  padding: 25px 25px;
+  border: 3px solid black;
+  border-top: 3px solid black;
+} */
+
+.scren {
+  border-top: 3px solid black;
+  max-width: 100%;
+  display: flex; /* Указує що лого це флекс контейнер для флекс бокса */
+  justify-content: center;
+}
+
+.screnCent {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+  border-top: 5px solid #696969;
+  border-bottom: 5px solid #696969;
+  border-radius: 10px;
+}
+
+.screnCent #logo5 {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.screnCent #p {
+  padding-bottom: 50px;
+  color: white;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer nav {
+  padding-top: 20px;
+}
+
+footer nav a {
+  color: white;
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 15px; /* відступи */
+  margin-left: 15px;
+}
+
+footer nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+footer nav .socialNetwork {
+  background-color: white;
+  border-radius: 70%;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+footer nav .socialNetwork a {
+  margin-right: 10px; /* відступи */
+  margin-left: 10px;
+  padding-top: 28px;
+}
+
+/* footer nav .socialNetwork a img {
+  padding-top: 10px;
+} */
+
+footer nav .socialNetwork:hover{
+  background-color: silver;
+}
+
+footer nav .socialNetwork a:hover {
+  border-bottom: none;
+}
+
+footer nav .socialNetwork a img:hover {
+  border-bottom: none;
+  background-color: #F5DEB3;
+  border-radius: 100%;
+}
+
+footer p {
+  color: white;
+  padding: 15px;
+  font-family: GunnyRewritten;
+  font-size: 20px;
+}
+
+/* Зробимо адапт. меню для екранів менше 768px */
+@media screen and (max-width: 768px) {
+  /* все крім першого елементу скривається */
+  .navs a:not(:first-child) {
+    display: none;
+    border-bottom: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .navs {
+    background-color: silver;
+    padding: 15px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 0px 0px 20px 20px;
+    border-top: none;
+    text-align: center;
+  }
+
+  .navs a.icon {
+    float: right;
+    background-color: Gray;
+    border: 2px solid black;
+    border-radius: 0px 0px 30px 30px;
+    display: block;
+    border-top: 2px solid black;
+  }
+
+  .navs a {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px 25px; /* Відступ один від одного зліва і з права*/
+    font-family: GunnyRewritten;
+    font-weight: bold;
+  }
+
+  nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  #menu:hover {
+    background-color: LightSlateGray;
+    color: #F0E68C;
+    padding: 25px 25px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+  }
+
+  .navs.responsive {
+    position: relative;
+  }
+
+  .navs.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navs.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .bord {
+    background-color: #D3D3D3;
+    max-width: 100%;
+    height: 80px;
+  }
+
+  #one {
+    text-align: center;
+    padding-top: 25px;
+    max-width: 100%;
+    font-family: GunnyRewritten;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .adv_url {
+    width: 40%;
+  }
+
+  /* .adv_url:hover{
+    margin-bottom: 3px;
+  } */
+
+  /* #clickF {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  #clickF .navs:hover {
+    padding: 20px 20px;
+  } */
+
+  .screnCent #p {
+    padding-bottom: 35px;
+    font-size: 35px;
+  }
+
+  footer nav .socialNetwork {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer p {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .navs a:not(:first-child) {
+    display: none;
+    border-bottom: 1.5px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .navs {
+    background-color: silver;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 0px 0px 15px 15px;
+    border-top: none;
+    text-align: center;
+  }
+
+  .navs a.icon {
+    float: right;
+    background-color: Gray;
+    border: 2px solid black;
+    border-radius: 0px 0px 15px 15px;
+    display: block;
+    border-top: 2px solid black;
+    padding: 10px 10px;
+  }
+
+  .navs a {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 15px; /* Відступ один від одного зліва і з права*/
+    font-family: GunnyRewritten;
+    font-weight: bold;
+  }
+
+  #menu:hover {
+    background-color: LightSlateGray;
+    color: #F0E68C;
+    padding: 15px 15px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+  }
+
+  nav {
+    width: 100%;
+    height: 70px;
+  }
+
+  .navs.responsive {
+    position: relative;
+  }
+
+  .navs.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navs.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .bord {
+    background-color: #D3D3D3;
+    max-width: 100%;
+    height: 50px;
+  }
+
+  #one {
+    text-align: center;
+    padding-top: 10px;
+    max-width: 100%;
+    font-family: GunnyRewritten;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .adwantages {
+    flex-direction: column;
+  }
+
+  .adv_url {
+    width: 100%;
+  }
+
+  #clickFone {
+    height: 80px;
+  }
+
+  /* #clickF {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 70px;
+    padding-top: 15px;
+  }
+
+  #clickF .navs {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #clickF .navs:hover {
+    padding: 5px;
+  }
+
+  #clickF a:hover {
+    padding: 5px;
+  } */
+
+  .screnCent #p {
+    padding-bottom: 25px;
+    font-size: 25px;
+  }
+
+  footer nav a {
+    font-size: 20px;
+  }
+
+  footer nav .socialNetwork {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer p {
+    padding-top: 120px;
+  }
+}

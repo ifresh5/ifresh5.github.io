@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iSportAndPower</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page/styleGal.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img class='graficlogo' src="img/logo3.png" alt=""></a>
+      </div>
+      <nav>
+        <div class="navs" id="topNav">
+          <a class="hovers" href="index.html">Главная</a>
+          <a class="hovers" href="blog.html">Блог</a>
+          <a class="hovers" href="#">Галерея</a>
+          <a class="hovers" href="index.html#ger">Гайды</a>
+          <a id="menu" href="#" class="icon">₪Ξ</a> <!--  визиває графічну іконку -->
+        </div>
+      </nav>
+    </header>
+    <main class="projekt">
+      <div class="galereya">
+        <div class="galNum"> <img src="img/gal/gal1.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal2.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal3.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal4.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal5.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal6.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal7.png" alt=""></div>
+        <div class="galNum"> <img src="img/gal/gal8.png" alt=""></div>
+      </div>
+      <div id="clickFone">
+            <a class="hovers" href="#">Вверх</a>
+      </div>
+    </main>
+    <footer>
+      <nav>
+          <a href="blog.html">Блог</a>
+          <a href="#">Галерея</a>
+          <a href="index.html#ger">Гайды</a>
+          <div class="socialNetwork">
+              <a href=""><img src="img/socialNetwork1.png" alt=""></a>
+              <a href=""><img src="img/socialNetwork2.png" alt=""></a>
+              <a href=""><img src="img/socialNetwork3.png" alt=""></a>
+              <a href=""><img src="img/socialNetwork4.png" alt=""></a>
+          </div>
+      </nav>
+      <p>Web development 2018</p>
+    </footer>
+    <script type="text/javascript">
+    menu.onclick = function myFunction() {
+      var x = document.getElementById('topNav');
+
+        if(x.className === "navs") {
+          x.className += " responsive"
+        } else {
+          x.className = "navs"
+        }
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+h1:hover {
+  color: black;
+}
+
+.blogg {
+  font-family: GunnyRewritten;
+  font-weight: bold;
+  font-size: 25px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.textBlogg {
+  overflow: hidden;
+  width: 70%;
+  height: 300px;
+  border: 3px solid black;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+.blogg_url {
+  color: black;
+}
+
+.blogg_url:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  .textBlogg {
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .blogg {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .textBlogg {
+    overflow: hidden;
+    height: 100px;
+  }
+
+  .blogg {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+.blog-conteiner {
+  margin: 80px auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.5) 0 30px 35px -12px; /* тінь */
+  width: 50rem;
+}
+
+.blog-cover {
+  background: url(../../img/trenn2.png);
+  background-size: cover;
+  height: 20rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: inset rgba(0,0,0,0.3) 0 64px 64px -12px;
+}
+
+.blog-cover2 {
+  background: url(../../img/tren.png);
+  background-size: cover;
+  height: 20rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.blog-body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blog-title h1 {
+  text-align: center;
+}
+
+.blog-title h1 a {
+  color: black;
+  font-weight: 500;   /* Устанавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100.  */
+}
+
+
+.blog-text p {
+  color: #4d4d4d;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.blog-tegs {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-tegs ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+ .blog-tegs li + li {  /* li + li потрібно щоби перший елемент не відступав на 0.5rem; */
+  margin-left: 0.5rem;
+}
+
+.blog-tegs a {
+  border: 1px solid #999999;
+  border-radius: 5px;
+  color: black;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px; /* відступи між буквами */
+  padding: 0 .5rem;
+  text-align: center;
+  text-transform: uppercase; /* всі букви великі */
+  white-space: nowrap; /* без переносу */
+  width: 5rem;
+}
+
+.footer-blog {
+  width: 80%;
+  border-top: 1px solid black;
+  margin: 0 auto;
+  padding-bottom: 0.2rem;
+}
+
+.footer-blog ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.footer-blog ul li {
+  color: #999999;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase; /* всі букви великі */
+  white-space: nowrap; /* без переносу */
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-conteiner {
+    width: 30rem;
+  }
+
+  .blog-cover {
+    background: url(../../img/trenn2.1.png);
+    background-size: cover;
+  }
+
+  .blog-cover2 {
+    background: url(../../img/tren.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blog-conteiner {
+    width: 15rem;
+    margin-top: 40px;
+  }
+
+  .blog-cover {
+    background: url(../../img/trenn2.1.png);
+    background-size:contain;
+    height: 10rem;
+  }
+
+  .blog-cover2 {
+    background: url(../../img/tren2.png);
+    background-size: cover;
+    height: 10rem;
+  }
+
+  .blog-title h1 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .blog-conteiner {
+    width: 12rem;
+    margin-top: 30px;
+  }
+
+  .blog-cover {
+    background: url(../../img/trenn2.1.png);
+    background-size:contain;
+    height: 8rem;
+  }
+
+  .blog-cover2 {
+    background: url(../../img/tren2.png);
+    background-size: cover;
+    height: 8rem;
+  }
+}
