@@ -13,6 +13,8 @@
 .galNum {
   margin-left: 2.5px;
   margin-right: 2.5px;
+  position: relative;
+  z-index: 1;
 }
 
 .galNum img {
